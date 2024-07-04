@@ -1,0 +1,54 @@
+<!-- avatar and carousel container -->
+<div class="container flex-column-center">
+    <!-- avatar -->
+    <div class="avatar-container">
+      <h5>user</h5>
+      <p-avatar 
+        label="t" 
+        styleClass="mr-2" 
+        size="xlarge" 
+        shape="circle" />
+    </div>
+  
+    <!-- carousel -->
+    <div class="card carousel-container">
+        <h1>My appointments</h1>
+      <p-carousel 
+        [value]="appointments" 
+        [numVisible]="3" 
+        [numScroll]="3" 
+        [circular]="true" 
+        [responsiveOptions]="responsiveOptions" 
+        autoplayInterval="3000">
+        <ng-template let-appointment pTemplate="item">
+          <div class="border-1 surface-border border-round m-2 p-3">
+            <div class="mb-3">
+              <div class="relative mx-auto">
+                <img 
+                  src="https://example.com/images/{{ appointment.image }}" 
+                  [alt]="appointment.name" 
+                  class="w-full border-round" />
+                <p-tag 
+                  [value]="appointment.status" 
+                  [severity]="getSeverity(appointment.status)" 
+                  class="absolute" 
+                  [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+              </div>
+            </div>
+            <div class="mb-3 font-medium">
+              {{ appointment.name }}
+            </div>
+            <div class="flex justify-content-between align-items-center">
+              <div class="mt-0 font-semibold text-xl">
+                {{ appointment.date }}
+              </div>
+              <span>
+                <p-button icon="pi pi-check" severity="secondary" [outlined]="true" />
+                <p-button icon="pi pi-times" styleClass="ml-2" />
+              </span>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>

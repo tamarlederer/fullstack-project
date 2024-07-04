@@ -1,0 +1,84 @@
+
+
+/* ======- FOOTER -====== */
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+/* footer text */
+footer div p {
+    font-family: 'rubik one', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer div p i.red {
+    color: red;
+    font-size: 24px; /* הוספתי גודל גוף */
+}
+
+/* footer text effects */
+footer div p span {
+    transition: background-color 1500ms ease, color 1500ms ease; /* שינוי אפקטים */
+    background-color: black;
+    color: white;
+}
+
+footer div p span:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer Image Links */
+footer a.github {
+    transition: color 500ms ease; /* קצב אפקטים */
+    font-size: 3em;
+    color: rgb(13, 38, 54);
+    padding: 10px;
+    display: inline-block;
+}
+
+footer a.codepen {
+    transition: color 500ms ease; /* קצב אפקטים */
+    font-size: 3em;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* image links hover effects */
+footer a.github:hover,
+footer a.codepen:hover {
+    color: darkgray;
+}
+
+/* Resposive Footer */
+footer.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    footer.pc {
+        display: none;
+    }
+    footer.mobile {
+        display: block;
+    }
+    footer.mobile div p {
+        font-size: 5px;
+    }
+}
+
+/* Footer Icons */
+footer a.github i.fab.fa-github,
+footer a.codepen i.fab.fa-codepen {
+    font-size: 0.5em; /* הקטנתי את הגודל של האייקונים */
+    color: black; /* צבע גוף האייקונים */
+    padding: 5px; /* רווח מסביב לגוף */
+}
