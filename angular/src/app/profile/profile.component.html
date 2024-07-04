@@ -25,9 +25,9 @@
             <div class="mb-3">
               <div class="relative mx-auto">
                 <img 
-                  src="https://example.com/images/{{ appointment.image }}" 
+                [src]="appointment.image" 
                   [alt]="appointment.name" 
-                  class="w-full border-round" />
+                  class="w-full border-round small-image" />
                 <p-tag 
                   [value]="appointment.status" 
                   [severity]="getSeverity(appointment.status)" 
@@ -50,5 +50,7 @@
           </div>
         </ng-template>
       </p-carousel>
+      <div style="padding: 50%;"></div>
     </div>
+    
   </div>

@@ -19,13 +19,13 @@ export class ProfileComponent {
 
   ngOnInit() {
     this.appointments = [
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Smith', status: 'Confirmed', date: '2024-07-03' },
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Johnson', status: 'Pending', date: '2024-07-05' },
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
-      { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBoMs1jw0lfltFIlF98IdQtFmF78a2SLP7ew&s', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
+      { image: 'assets/doctor1.png', name: 'Dr. Smith', status: 'Confirmed', date: '2024-07-03' },
+      { image: '/assets/doctor2.png', name: 'Dr. Johnson', status: 'Pending', date: '2024-07-05' },
+      { image: '/assets/doctor3.png', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
+      { image: '/assets/doctor2.png', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
+      { image: '/assets/doctor1.png', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
+      { image: '/assets/doctor3.png', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
+      { image: '/assets/doctor1.png', name: 'Dr. Williams', status: 'Cancelled', date: '2024-07-07' },
 
     ];
 

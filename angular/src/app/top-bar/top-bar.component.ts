@@ -16,7 +16,7 @@ export class TopBarComponent implements OnInit{
 
   ngOnInit() {
       this.items = [
-          { label: 'Dashboard', icon: 'pi pi-home', routerLink: '/profile' },
+          { label: 'Profile', icon: 'pi pi-user', routerLink: '/profile' },
           { label: 'Transactions', icon: 'pi pi-chart-line', routerLink: '/home' },
           { label: 'Products', icon: 'pi pi-list', routerLink: '/home' },
           { label: 'Messages', icon: 'pi pi-inbox', routerLink: '/home' }
