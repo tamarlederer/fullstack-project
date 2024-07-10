@@ -1,0 +1,22 @@
+<div class="card">
+    <h2>Login Form</h2>
+
+    <div class="login_register">
+        <a routerLink="/sign-in" class="login" >Login</a>
+        <a routerLink="/sign-up" class="register" >Signup</a>
+    </div>
+
+    <form class="form">
+        <input type="email" placeholder="Email Address" class="email" [(ngModel)]="email">
+        <input type="password" placeholder="Password" class="pass" [(ngModel)]="password">
+    </form>
+
+    <a href="#" class="fp">Forgot password?</a>
+
+    <button type="button" class="login_btn" (click)="login()">Login</button>
+
+    <div class="footer_card">
+        <p>Not a member?</p>
+        <a href="#">Signup now</a>
+    </div>
+</div>

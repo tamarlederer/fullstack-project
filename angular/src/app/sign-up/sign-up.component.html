@@ -1,0 +1,17 @@
+<div class="card">
+    <h2>Signup Form</h2>
+    <div class="login_register">
+        <a routerLink="/sign-in" class="register" >Login</a>
+        <a routerLink="/sign-up" class="login" >Signup</a>
+    </div>
+
+    <form class="form" (ngSubmit)="submitForm()">
+        <input type="email" placeholder="Email Address" class="email" [(ngModel)]="email" name="email">
+        <input type="password" placeholder="Password" class="pass" [(ngModel)]="password" name="password">
+        <input type="password" placeholder="Confirm Password" class="confirm_pass" [(ngModel)]="confirmPassword" name="confirmPassword">
+        <button type="submit" class="login_btn">Signup</button>
+    </form>
+
+    <a href="#" class="fp">Forgot password?</a>
+</div>
+
