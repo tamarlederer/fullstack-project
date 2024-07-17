@@ -19,7 +19,7 @@ namespace Repository.Repositories
         public User Add(User entity)
         {
             _context.Users.Add(entity);
-            _context.save();
+            _context.Save();
             return entity;
         }
 
@@ -27,7 +27,7 @@ namespace Repository.Repositories
         {
             User u=_context.Users.FirstOrDefault(x => x.Id == id);
             _context.Users.Remove(u);
-            _context.save();
+            _context.Save();
         }
 
         public List<User> GetAll()
@@ -51,7 +51,7 @@ namespace Repository.Repositories
             prev.Street = entity.Street;
             prev.City = entity.City;
             prev.Number = entity.Number;
-            _context.save(); 
+            _context.Save(); 
             return prev;
         }
     }

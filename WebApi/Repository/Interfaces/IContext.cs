@@ -16,7 +16,7 @@ namespace Repository.Interfaces
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Category> Categories { get; set; }
 
-        public void save();
+        public void Save();
     }
 }
  

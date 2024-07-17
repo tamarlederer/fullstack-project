@@ -18,7 +18,7 @@ namespace Repository.Repositories
         public Appointment Add(Appointment entity)
         {
             _context.Appointments.Add(entity);
-            _context.save();
+            _context.Save();
             return entity;
         }
 
@@ -26,7 +26,7 @@ namespace Repository.Repositories
         {
             Appointment a = _context.Appointments.FirstOrDefault(x => x.Id == id);
             _context.Appointments.Remove(a);
-            _context.save();
+            _context.Save();
         }
 
         public List<Appointment> GetAll()
@@ -46,7 +46,7 @@ namespace Repository.Repositories
             prev.Doctor = entity.Doctor;
             prev.User= entity.User;
             prev.Status = entity.Status;
-            _context.save();
+            _context.Save();
             return prev;
         }
     }

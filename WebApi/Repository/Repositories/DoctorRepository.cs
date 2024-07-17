@@ -18,7 +18,7 @@ namespace Repository.Repositories
         public Doctor Add(Doctor entity)
         {
             _context.Doctors.Add(entity);
-            _context.save();
+            _context.Save();
             return entity;
         }
 
@@ -26,7 +26,7 @@ namespace Repository.Repositories
         {
             Doctor d = _context.Doctors.FirstOrDefault(x => x.Id == id);
             _context.Doctors.Remove(d);
-            _context.save();
+            _context.Save();
         }
 
         public List<Doctor> GetAll()
@@ -52,7 +52,7 @@ namespace Repository.Repositories
             prev.Number = entity.Number;
             prev.City = entity.City;
             prev.ReceptionDays = entity.ReceptionDays;
-            _context.save();
+            _context.Save();
             return prev;
         }
     }

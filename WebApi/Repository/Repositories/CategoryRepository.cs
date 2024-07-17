@@ -18,7 +18,7 @@ namespace Repository.Repositories
         public Category Add(Category entity)
         {
             _context.Categories.Add(entity);
-            _context.save();
+            _context.Save();
             return entity;  
         }
 
@@ -26,7 +26,7 @@ namespace Repository.Repositories
         {
             Category c= _context.Categories.FirstOrDefault(x=>x.Id==id);
             _context.Categories.Remove(c);
-            _context.save();
+            _context.Save();
         }
 
         public List<Category> GetAll()
@@ -43,7 +43,7 @@ namespace Repository.Repositories
         {
             Category prev=GetById(id);
             prev.Name = entity.Name;
-            _context.save();
+            _context.Save();
             return prev;
         }
     }
