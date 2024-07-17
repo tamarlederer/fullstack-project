@@ -13,6 +13,8 @@ namespace Repository.Interfaces
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         public void save();
     }
