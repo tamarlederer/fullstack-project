@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lHkZksWi7CcEnijqVNyt4sBNQcCl/kgB85u9X1j98KDsqoKNLKz8dUuLGAUFJGDb6fuSgyn/WDromRWTNC/QMg==",
+  "dgSpecHash": "vekfEkb+5CjdnGo/7xELxaRQS6GmZd3DgeooIxPFoz7U3mrHXGHuOyBwm99wvrkC78nml3XZlM9v1A/DSQ6lLw==",
   "success": true,
   "projectFilePath": "C:\\תמר  לימודים\\project\\WebApi\\Repository\\Repository.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

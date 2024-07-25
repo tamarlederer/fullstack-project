@@ -14,7 +14,7 @@ namespace Repository.Entities
         public string Password { get; set; }
         public string Phone { get; set; }
         public string Description { get; set; }
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
         public string Street { get; set; }
         public int Number { get; set; }
         public string City { get; set; }

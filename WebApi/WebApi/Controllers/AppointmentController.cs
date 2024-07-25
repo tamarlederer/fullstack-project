@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Common.Dto;
+using Microsoft.AspNetCore.Mvc;
+using Service.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,44 @@ namespace WebApi.Controllers
     [ApiController]
     public class AppointmentController : ControllerBase
     {
+        private readonly IService<AppointmentDto> service;
+        public AppointmentController(IService<AppointmentDto> service)
+        {
+            this.service = service;
+        }
         // GET: api/<AppointmentController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<AppointmentDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            return service.GetAll();
         }
 
         // GET api/<AppointmentController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public AppointmentDto Get(int id)
         {
-            return "value";
+            return service.GetById(id);
         }
 
         // POST api/<AppointmentController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public AppointmentDto Post([FromBody] AppointmentDto value)
         {
+            return service.Add(value);
         }
 
         // PUT api/<AppointmentController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public AppointmentDto Put(int id, [FromBody] AppointmentDto value)
         {
+            return service.Update(id, value);
         }
 
         // DELETE api/<AppointmentController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            service.Delete(id);
         }
     }
 }
