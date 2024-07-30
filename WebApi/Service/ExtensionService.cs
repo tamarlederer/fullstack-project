@@ -25,7 +25,7 @@ namespace Service
             services.AddScoped<IService<DoctorDto>, DoctorService>();
             services.AddScoped<IService<AppointmentDto>, AppointmentService>();
             services.AddScoped<IService<CategoryDto>, CategoryService>();
-            
+            services.AddAutoMapper(typeof(MapperProfile));
             return services;
         }
         

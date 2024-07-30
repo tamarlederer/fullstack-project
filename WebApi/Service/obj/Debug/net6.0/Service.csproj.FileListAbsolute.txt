@@ -1,0 +1,17 @@
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Service.deps.json
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Service.dll
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Service.pdb
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Common.dll
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Repository.dll
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Common.pdb
+C:\תמר  לימודים\project\WebApi\Service\bin\Debug\net6.0\Repository.pdb
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.dll
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\refint\Service.dll
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\Service.pdb
+C:\תמר  לימודים\project\WebApi\Service\obj\Debug\net6.0\ref\Service.dll

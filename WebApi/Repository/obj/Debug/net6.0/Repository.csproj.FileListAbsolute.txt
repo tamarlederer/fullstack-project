@@ -1,0 +1,12 @@
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\תמר  לימודים\project\WebApi\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\תמר  לימודים\project\WebApi\Repository\bin\Debug\net6.0\Repository.dll
+C:\תמר  לימודים\project\WebApi\Repository\bin\Debug\net6.0\Repository.pdb
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.dll
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\Repository.pdb
+C:\תמר  לימודים\project\WebApi\Repository\obj\Debug\net6.0\ref\Repository.dll

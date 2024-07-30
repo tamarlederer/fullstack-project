@@ -51,7 +51,7 @@ namespace Repository.Repositories
             prev.Street = entity.Street;
             prev.Number = entity.Number;
             prev.City = entity.City;
-            prev.ReceptionDays = entity.ReceptionDays;
+            //prev.ReceptionDays = entity.ReceptionDays;
             _context.Save();
             return prev;
         }
