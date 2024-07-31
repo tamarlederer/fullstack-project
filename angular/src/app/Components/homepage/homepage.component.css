@@ -290,7 +290,7 @@ header .arrow-down {
 /*Start Recipes*/
 .recipes .image {
     height: 350px;
-    background: url("../../assets/מערכת-פורטל-רופאים\(4\).jpg") fixed center;
+    background: url("../../../assets/מערכת-פורטל-רופאים\(4\).jpg") fixed center;
     background-size: cover;
 }
 /*End Recipes*/
@@ -365,7 +365,7 @@ header .arrow-down {
 
 /*Start fixed-image*/
 .fixed-image {
-    background: url("../../assets/לוז.jpeg") fixed center;
+    background: url("../../../assets/לוז.jpeg") fixed center;
     background-size: cover;
     height: 400px;
 }

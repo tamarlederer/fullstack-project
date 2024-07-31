@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ProfileComponent } from './profile/profile.component';
+import { TopBarComponent } from './Components/top-bar/top-bar.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { HomepageComponent } from './Components/homepage/homepage.component';
+import { ProfileComponent } from './Components/profile/profile.component';
 import { CommonModule } from '@angular/common';
 import { PrimeNGConfig } from 'primeng/api';
 
