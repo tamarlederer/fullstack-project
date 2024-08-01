@@ -10,7 +10,7 @@ namespace Common.Dto
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public DoctorDto Doctor { get; set; }
+        public int DoctorId { get; set; }
         public int UserId { get; set; }
         //public UserDto User { get; set; }
         public int Status { get; set; }

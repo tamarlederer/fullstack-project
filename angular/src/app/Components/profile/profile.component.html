@@ -9,12 +9,11 @@
         size="xlarge" 
         shape="circle" />
     </div>
-  
     <!-- carousel -->
     <div class="card carousel-container">
         <h1>My appointments</h1>
       <p-carousel 
-        [value]="appointments" 
+        [value]="appointmentList ??[]" 
         [numVisible]="3" 
         [numScroll]="3" 
         [circular]="true" 

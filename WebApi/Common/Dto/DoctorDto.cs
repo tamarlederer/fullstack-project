@@ -14,7 +14,7 @@ namespace Common.Dto
         public string Password { get; set; }
         public string Phone { get; set; }
         public string Description { get; set; }
-        public CategoryDto Category { get; set; }
+        public int CategoryId { get; set; }
         public string Street { get; set; }
         public int Number { get; set; }
         public string City { get; set; }

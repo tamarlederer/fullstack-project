@@ -17,6 +17,6 @@ namespace Repository.Entities
         public string Street { get; set; }
         public int Number { get; set; }
         public string City { get; set; }
-        //public virtual ICollection<Appointment>? Appointments { get; set; }
+        public virtual ICollection<Appointment>? Appointments { get; set; }
     }
 }

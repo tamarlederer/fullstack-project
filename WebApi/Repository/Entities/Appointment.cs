@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace Repository.Entities
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
+        public int DoctorId { get; set; }
+        [ForeignKey("DoctorId")]
         public virtual Doctor Doctor { get; set; }
         public int UserId { get; set; }
         [ForeignKey("UserId")]
