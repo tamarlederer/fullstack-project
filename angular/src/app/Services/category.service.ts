@@ -10,22 +10,22 @@ export class CategoryService {
 
   baseUrl = 'https://localhost:7223/api/Category';
 
-  constructor(private _httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getAllCategories(): Observable<Category[]> {
-    return this._httpClient.get<Category[]>(`${this.baseUrl}`)
+    return this.httpClient.get<Category[]>(`${this.baseUrl}`)
   }
 
   getCategoryById(id: number): Observable<Category> {
-    return this._httpClient.get<Category>(`${this.baseUrl}/${id}`)
+    return this.httpClient.get<Category>(`${this.baseUrl}/${id}`)
   }
   postCategory(formData: FormData): Observable<Category> {
-    return this._httpClient.post<Category>(`${this.baseUrl}`, formData)
+    return this.httpClient.post<Category>(`${this.baseUrl}`, formData)
   }
   putCategory(id: number, formData: FormData): Observable<Category> {
-    return this._httpClient.put<Category>(`${this.baseUrl}/${id}`, formData)
+    return this.httpClient.put<Category>(`${this.baseUrl}/${id}`, formData)
   }
   deleteCategory(id: number): Observable<Category> {
-    return this._httpClient.delete<Category>(`${this.baseUrl}/${id}`)
+    return this.httpClient.delete<Category>(`${this.baseUrl}/${id}`)
   }
 }

@@ -18,7 +18,7 @@ import { AppointmentService } from '../../Services/appointment.service';
 export class ProfileComponent {
   public appointmentList: Appointment[] |null|undefined;
   responsiveOptions: any[] = [];
-constructor(private router:Router, private _appointmentService:AppointmentService){}
+constructor( private _appointmentService:AppointmentService){}
   ngOnInit() :void{
     this._appointmentService.getAllAppointments().subscribe({
       next:appointments=>{
@@ -26,7 +26,7 @@ constructor(private router:Router, private _appointmentService:AppointmentServic
         console.log("Appointments Retrieved:",appointments);
         
       },
-      error:err=>console.error("Error retrieving members:", err)
+      error:err=>console.error("Error retrieving Appointments:", err)
       
     });
   

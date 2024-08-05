@@ -10,22 +10,22 @@ export class DoctorService {
 
   baseUrl = 'hhttps://localhost:7223/api/Doctor';
 
-  constructor(private _httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getAllDoctors(): Observable<Doctor[]> {
-    return this._httpClient.get<Doctor[]>(`${this.baseUrl}`)
+    return this.httpClient.get<Doctor[]>(`${this.baseUrl}`)
   }
 
   getDoctorById(id: number): Observable<Doctor> {
-    return this._httpClient.get<Doctor>(`${this.baseUrl}/${id}`)
+    return this.httpClient.get<Doctor>(`${this.baseUrl}/${id}`)
   }
   postDoctor(formData: FormData): Observable<Doctor> {
-    return this._httpClient.post<Doctor>(`${this.baseUrl}`, formData)
+    return this.httpClient.post<Doctor>(`${this.baseUrl}`, formData)
   }
   putDoctor(id: number, formData: FormData): Observable<Doctor> {
-    return this._httpClient.put<Doctor>(`${this.baseUrl}/${id}`, formData)
+    return this.httpClient.put<Doctor>(`${this.baseUrl}/${id}`, formData)
   }
   deleteDoctor(id: number): Observable<Doctor> {
-    return this._httpClient.delete<Doctor>(`${this.baseUrl}/${id}`)
+    return this.httpClient.delete<Doctor>(`${this.baseUrl}/${id}`)
   }
 }

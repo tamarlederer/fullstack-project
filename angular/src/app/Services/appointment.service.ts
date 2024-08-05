@@ -10,22 +10,22 @@ export class AppointmentService {
 
   baseUrl = 'https://localhost:7223/api/Appointment';
 
-  constructor(private _httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   getAllAppointments(): Observable<Appointment[]> {
-    return this._httpClient.get<Appointment[]>(`${this.baseUrl}`)
+    return this.httpClient.get<Appointment[]>(`${this.baseUrl}`)
   }
 
   getAppointmentById(id: number): Observable<Appointment> {
-    return this._httpClient.get<Appointment>(`${this.baseUrl}/${id}`)
+    return this.httpClient.get<Appointment>(`${this.baseUrl}/${id}`)
   }
   postAppointment(formData: FormData): Observable<Appointment> {
-    return this._httpClient.post<Appointment>(`${this.baseUrl}`, formData)
+    return this.httpClient.post<Appointment>(`${this.baseUrl}`, formData)
   }
   putUAppointment(id: number, formData: FormData): Observable<Appointment> {
-    return this._httpClient.put<Appointment>(`${this.baseUrl}/${id}`, formData)
+    return this.httpClient.put<Appointment>(`${this.baseUrl}/${id}`, formData)
   }
   deleteAppointment(id: number): Observable<Appointment> {
-    return this._httpClient.delete<Appointment>(`${this.baseUrl}/${id}`)
+    return this.httpClient.delete<Appointment>(`${this.baseUrl}/${id}`)
   }
 }
